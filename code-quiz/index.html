@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <header>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Code Quiz</title>
-    <link rel="stylesheet" href="./asset/style.css">
-</head>
-<body>
- <div class="container">
-     <div id="homepage" class="flex-center flex-column">
-         <h1>Coding Quiz Challenge</h1>
-         <a class="btn" href="./question.html">Start</a>
-         <a class="btn" href="./highscore.html">High Score</a>
-     </div>
- </div>   
-</body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </header>
 </html>
+
+<body>
+  <div class="scores" id="scores">
+    <a href="highScore.html">View Highscores</a>
+  </div>
+
+  <div class="timer" id="timer">
+    Time: <span class="countdown" id="countdown">0</span>
+  </div>
+
+  <div class="page-content">
+    <div class="question" id="question">
+      <h1>Coding Quiz Challenge</h1>
+      <p>
+        Welcome to the code quiz! This is where you test your knowledge and to be the code quiz champion!Be aware of the timer!
+      </p>
+      <ul class="choices" id="choices"></ul>
+      <button class="start-time" id="start-time">Start Quiz</button>
+    </div>
+  </div>
+
+  <script src="./asset/script.js"></script>
+</body>
